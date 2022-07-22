@@ -1,0 +1,25 @@
+/* Below animations are fore modal created using React-Modal */
+.ReactModal__Overlay {
+    transition: transform 300ms ease-in-out;
+    transition-delay: 100ms;
+    transform: scale(0);
+    /* transform: translateY(-150%); */
+}
+
+.ReactModal__Overlay--after-open{
+    transform: scale(1);
+    /* transform: translateY(0%); */
+}
+
+.ReactModal__Overlay--before-close{
+    transform: scale(0);
+    /* transform: translateY(-150%); */
+}
+@font-face {font-family: "MabryPro-Regular";
+    src: url("./@font-face/e4397c6cf12af9f58d46e124d18d6d93.eot"); /* IE9*/
+    src: url("./@font-face/e4397c6cf12af9f58d46e124d18d6d93.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./@font-face/e4397c6cf12af9f58d46e124d18d6d93.woff2") format("woff2"), /* chrome、firefox */
+    url("./@font-face/e4397c6cf12af9f58d46e124d18d6d93.woff") format("woff"), /* chrome、firefox */
+    url("./@font-face/e4397c6cf12af9f58d46e124d18d6d93.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("./@font-face/e4397c6cf12af9f58d46e124d18d6d93.svg#MabryPro-Regular") format("svg"); /* iOS 4.1- */
+  }
