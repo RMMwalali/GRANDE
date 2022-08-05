@@ -2,6 +2,14 @@ import "tailwindcss/dist/base.css";
 import "styles/globalStyles.css";
 import React from "react";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom/cjs/react-router-dom.min";
+
+import Home from "./demos/SaaSProductLandingPage"
+import Blog from "./components/blogs/ThreeColSimpleWithImageAndDashedBorder"
+import Shop from "./pages/Pricing"
+import ContactUs from "pages/ContactUs";
+import Login from "pages/Login";
+import SignUp from "pages/Signup"
 
 /*
  * This is the entry point component of this project. You can change the below exported default App component to any of
@@ -101,11 +109,9 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
-import ComponentRenderer from "ComponentRenderer.js";
-import MainLandingPage from "MainLandingPage.js";
-import ThankYouPage from "ThankYouPage.js";
-
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+//import ComponentRenderer from "ComponentRenderer.js";
+//import MainLandingPage from "MainLandingPage.js";
+//import ThankYouPage from "ThankYouPage.js";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -115,18 +121,19 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/components/:type/:subtype/:name">
-          <ComponentRenderer />
+        <Route exact path ="/" component = {Home}>
         </Route>
-        <Route path="/components/:type/:name">
-          <ComponentRenderer />
+        <Route exact path ="/Blog" component = {Blog}>
         </Route>
-        <Route path="/thank-you">
-          <ThankYouPage />
+        <Route exact path ="/Shop" component = {Shop}>
         </Route>
-        <Route path="/">
-          <MainLandingPage />
+        <Route exact path ="/Contact Us" component = {ContactUs}>
         </Route>
+        <Route exact path ="/Login" component = {Login}>
+        </Route>
+        <Route exact path ="/Sign Up" component = {SignUp}>
+        </Route>
+        <Redirect to = "/"/>
       </Switch>
     </Router>
   );

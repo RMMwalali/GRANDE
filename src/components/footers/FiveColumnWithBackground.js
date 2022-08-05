@@ -2,6 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import { Link } from "react-router-dom";
 
 import LogoImage from "images/logo-light.svg";
 import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
@@ -19,7 +20,6 @@ const ColumnHeading = tw.h5`uppercase font-bold`;
 
 const LinkList = tw.ul`mt-6 text-sm font-medium`;
 const LinkListItem = tw.li`mt-3`;
-const Link = tw.a`border-b-2 border-transparent hocus:border-gray-100 pb-1 transition duration-300`;
 
 const Divider = tw.div`my-16 border-b-2 border-primary-400 w-full`;
 
@@ -56,16 +56,16 @@ export default () => {
             <ColumnHeading>Main</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Home</Link>
+                <Link to = "/">Home</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Blog</Link>
+              <Link to = "/Blog">Blog</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Shop</Link>
+                <Link to = "/Shop">Shop</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Contact Us</Link>
+                <Link to="/Contact Us">Contact Us</Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -76,7 +76,10 @@ export default () => {
                 <Link href="#">Web Development and Design</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Video and Animation</Link>
+                <Link href="#">Graphics and Design</Link>
+              </LinkListItem>
+              <LinkListItem>
+                <Link href ="#">Video and Animation</Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="#">Writing and Editing</Link>
@@ -87,10 +90,10 @@ export default () => {
             <ColumnHeading>User Guide</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Login</Link>
+                <Link to="/Login">Login</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Register</Link>
+                <Link to="Sign Up">Register</Link>
               </LinkListItem>
             </LinkList>
           </Column>

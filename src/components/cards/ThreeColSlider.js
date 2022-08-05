@@ -10,6 +10,12 @@ import { ReactComponent as StarIcon } from "feather-icons/dist/icons/star.svg";
 import { ReactComponent as ChevronLeftIcon } from "feather-icons/dist/icons/chevron-left.svg";
 import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/chevron-right.svg";
 
+import nftDev from "images/shop/NFTdev.jpg";
+import BlockchainDev from "images/shop/blockchaindev.jpg";
+import dataMining from "images/shop/data-mining.jpg";
+import NFTart from "images/shop/NFTart.jpg";
+import writingandEditing from "images/shop/editing.jpg";
+
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
 
@@ -91,36 +97,44 @@ export default () => {
   /* Change this according to your needs */
   const cards = [
     {
-      imageSrc: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "Wyatt Residency",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Rome, Italy",
-      pricingText: "USD 39/Day",
-      rating: "4.8",
-    },
-    {
-      imageSrc: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "Soho Paradise",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Ibiza, Spain",
-      pricingText: "USD 50/Day",
-      rating: 4.9,
-    },
-    {
-      imageSrc: "https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "Hotel Baja",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Palo Alto, CA",
-      pricingText: "USD 19/Day",
+      imageSrc: nftDev,
+      title: "NFT Development",
+      description: "NFTs are really hot right now. However, starting from the ground up is not as easy as people think. Ours is a one stop shop for beginning or continuing NFT projects. With us get your marketplace, art, minting website and landing page in one place.",
+      locationText: "Remote",
+      pricingText: "USD 599",
       rating: "5.0",
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "Hudak Homes",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Arizona, RAK",
-      pricingText: "USD 99/Day",
-      rating: 4.5,
+      imageSrc: BlockchainDev,
+      title: "Blockchain Development",
+      description: "If you are looking to come up with a unique cryptocurrency token, or decentralized app; we are happy to help! ",
+      locationText: "Remote",
+      pricingText: "USD 499",
+      rating: 4.9,
+    },
+    {
+      imageSrc: NFTart,
+      title: "NFT art",
+      description: "Unique sets of art, may it be a video, an image or an audio file, we'll mass produce either and bulk upload them to IPFS and the marketplace of your choice.",
+      locationText: "Remote",
+      pricingText: "USD 299",
+      rating: "5.0",
+    },
+    {
+      imageSrc: dataMining,
+      title: "Data Mining and Scraping",
+      description: "Websites, emails, contact information, we do it all. All well organized in a spreadsheet or other format of your choice. We do such with the outmost discretion and professionalism",
+      locationText: "Remote",
+      pricingText: "USD 199",
+      rating: 4.9,
+    },
+    {
+      imageSrc: writingandEditing,
+      title: "Proofreading and Editing",
+      description: "Work and school articles reviewed by our team to ensure they are well spelled and grammar-following",
+      locationText: "Remote",
+      pricingText: "USD 99",
+      rating: 4.8,
     },
   ]
 
@@ -128,7 +142,7 @@ export default () => {
     <Container>
       <Content>
         <HeadingWithControl>
-          <Heading>Popular Hotels</Heading>
+          <Heading>Popular Requests</Heading>
           <Controls>
             <PrevButton onClick={sliderRef?.slickPrev}><ChevronLeftIcon/></PrevButton>
             <NextButton onClick={sliderRef?.slickNext}><ChevronRightIcon/></NextButton>
@@ -162,7 +176,7 @@ export default () => {
                 </SecondaryInfoContainer>
                 <Description>{card.description}</Description>
               </TextInfo>
-              <PrimaryButton>Book Now</PrimaryButton>
+              <PrimaryButton>Buy Now</PrimaryButton>
             </Card>
           ))}
         </CardSlider>

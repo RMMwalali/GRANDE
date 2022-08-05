@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import { Link } from "react-router-dom"
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
@@ -72,14 +73,12 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">Home</NavLink>
-      <NavLink href="/#">Blog</NavLink>
-      <NavLink href="/#">Shop</NavLink>
-      <NavLink href="/#">Contact Us</NavLink>
-      <NavLink href="/#" tw="lg:ml-12!">
-        Login
-      </NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Sign Up</PrimaryLink>
+      <NavLink href="#"><Link to = "/">Home</Link></NavLink>
+      <NavLink href="#"><Link to = "/Blog">Blog</Link></NavLink>
+      <NavLink href="#"><Link to = "/Shop">Shop</Link></NavLink>
+      <NavLink href="#"><Link to = "/Contact Us">Contact Us</Link></NavLink>
+      <NavLink href="#" tw="lg:ml-12!"><Link to = "/Login">Log In</Link></NavLink>
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#"><Link to = "/Sign Up">Sign Up</Link></PrimaryLink>
     </NavLinks>
   ];
 

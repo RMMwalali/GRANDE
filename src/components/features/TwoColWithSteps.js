@@ -1,11 +1,14 @@
-import React from "react";
+import React , { useEffect, useRef } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-import TeamIllustrationSrc from "images/team-illustration-2.svg";
+import TeamIllustrationSrc from "images/shop/logo.gif";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
-
+/*
+import lottie from "lottie-web";
+import checklist from "lotties/checklist.json"
+*/
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
@@ -38,7 +41,22 @@ const StepNumber = tw.div`font-semibold text-4xl leading-none text-indigo-600`;
 const StepText = tw.div`mt-3 md:mt-0 md:ml-6`;
 const StepHeading = tw.h6`leading-none text-indigo-600 text-xl font-semibold`;
 const StepDescription = tw.p`my-8 lg:my-5 lg:my-8 sm:text-lg text-black font-semibold lg:text-base xl:text-lg leading-loose`;
-
+/*
+const StepsLottie = () => {
+  const anime = useRef(null);
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: anime.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: checklist,
+    });
+    return () => lottie.stop();
+  }, []);
+  return <div style={{height:700, width:600 }} ref={anime}></div>
+};
+*/
 export default ({
   subheading = "Our Expertise",
   heading = (
@@ -82,7 +100,7 @@ export default ({
     <Container>
       <TwoColumn>
         <ImageColumn>
-          <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
+        <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
           {imageDecoratorBlob && <DecoratorBlob css={decoratorBlobCss} />}
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>

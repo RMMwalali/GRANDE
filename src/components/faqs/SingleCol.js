@@ -44,25 +44,20 @@ export default ({
   description = " We've got answers to all of them. Here's the most commonly asked questions.",
   faqs = [
     {
-      question: "Is lunch provided free of cost ?",
+      question: "Which payment methods do you accept ?",
       answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
+        "We recommend the secure transfer of money through prepaid and credit cards but also accept online payment methods such as Paypal, Payoneer and Skrill."
     },
     {
-      question: "Do you have 2 Bedroom suites ?",
+      question: "Do you do refunds ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Yes we do. In a span of 10 - 20 days after a job order that has not been delivered you will automatically qualify for a refund.We guarantee jobs well done without such inconvenieces."
     },
     {
-      question: "Are Wi-Fi costs included in the price ?",
+      question: "What if I need help with my later after the job is done ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Upon deploying a website we are sure that it will definitely work brilliantly. If you need help or want to improve it later, we will be happy to help! "
     },
-    {
-      question: "Where can I reach you for support ?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    }
   ]
 }) => {
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);

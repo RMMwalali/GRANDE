@@ -2,6 +2,8 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import { Link } from "react-router-dom"
+
 
 import Header, { LogoLink, NavLinks, NavLink as NavLinkBase } from "../headers/light.js";
 
@@ -44,12 +46,13 @@ const Actions = styled.div`
 export default ({
   navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">Home</NavLink>
-      <NavLink href="#">Blog</NavLink>
-      <NavLink href="#">Shop</NavLink>
-      <NavLink href="#">Contact Us</NavLink>
+      <NavLink href="#"><Link to = "/">Home</Link></NavLink>
+      <NavLink href="#"><Link to = "/Blog">Blog</Link></NavLink>
+      <NavLink href="#"><Link to = "/Shop">Shop</Link></NavLink>
+      <NavLink href="#"><Link to = "/Contact Us">Contact Us</Link></NavLink>
     </NavLinks>
   ],
+  /* */
   heading = (
     <>
       Get Your Job Perfectly Done

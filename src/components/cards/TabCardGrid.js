@@ -9,6 +9,38 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as StarIcon } from "images/star-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-5.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-7.svg";
+import nftDev from "images/shop/NFTdev.jpg";
+import ecommerce from "images/shop/e-commerce.jpg";
+import blog from "images/shop/blog.jpg";
+import admin from "images/shop/adminSite.jpg";
+import portfolio from "images/shop/portfolio.jpg";
+import BlockchainDev from "images/shop/blockchaindev.jpg";
+import dataMining from "images/shop/data-mining.jpg";
+import gameDev from "images/shop/gamedev.jpg";
+import logoDesign from "images/shop/logoDesign.jpg";
+import businessCard from "images/shop/businesscard.jpg";
+import websiteDesign from "images/shop/webdesign.jpg";
+import landingPage from "images/shop/landingPageDesign.jpg";
+import NFTart from "images/shop/NFTart.jpg";
+import imageEditing from "images/shop/imageEditing.jpg";
+import UIUX from "images/shop/uiux.jpg";
+import socialMediaDesign from "images/shop/socialmediadesign.jpg";
+import lottie from "images/shop/lottieanime.gif";
+import characterAnime from "images/shop/character.gif";
+import logoAnime from "images/shop/rgoogle.gif";
+import NFT from "images/shop/nft.gif";
+import whiteboard from "images/shop/whiteboard.gif";
+import animatedExplainer from "images/shop/explainer.gif";
+import videoandPhotography from "images/shop/videoandphotography.gif";
+import socialmediaads from "images/shop/socialmediaads.jpg";
+import videoEditing from "images/shop/videoEditing.jpg";
+import writingandEditing from "images/shop/editing.jpg";
+import technicalWriting from "images/shop/technicalWriting.jpg";
+import UXwriting from "images/shop/UXwriting.jpg";
+import websiteContent from "images/shop/websiteContent.jpg";
+import bookEditing from "images/shop/bookEditing.jpg";
+import productDescriptions from "images/shop/productdescriptions.jpg";
+import resumeWriting from "images/shop/resumewriting.jpg";
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;
@@ -59,93 +91,304 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 `;
 
 export default ({
-  heading = "Checkout the Menu",
+  heading = "Checkout the Marketplace",
   tabs = {
-    Starters: [
+    Programming: [
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Veg Mixer",
-        content: "Tomato Salad & Carrot",
-        price: "$5.99",
+        imageSrc: nftDev,
+        title: "NFT Development",
+        content: "You name it we'll do it",
+        price: "$599",
         rating: "5.0",
         reviews: "87",
         url: "#"
       },
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Macaroni",
-        content: "Cheese Pizza",
-        price: "$2.99",
+        imageSrc:ecommerce,
+        title: "E-commerce",
+        content: "Online Marketplace with cart",
+        price: "$299",
         rating: "4.8",
         reviews: "32",
         url: "#"
       },
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327??ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Nelli",
-        content: "Hamburger & Fries",
-        price: "$7.99",
+        imageSrc:blog,
+        title: "Blog Site",
+        content: "One page responsive blog",
+        price: "$199",
         rating: "4.9",
         reviews: "89",
         url: "#"
       },
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Jalapeno Poppers",
-        content: "Crispy Soyabeans",
-        price: "$8.99",
+        imageSrc: portfolio,
+        title: "Portfolio Site",
+        content: "Attractive display of your skills",
+        price: "$199",
         rating: "4.6",
         reviews: "12",
         url: "#"
       },
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1473093226795-af9932fe5856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Cajun Chicken",
-        content: "Roasted Chicken & Egg",
-        price: "$7.99",
+        imageSrc: admin,
+        title: "Administration site",
+        content: "Landing page for analytics",
+        price: "$299",
         rating: "4.2",
         reviews: "19",
         url: "#"
       },
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1550461716-dbf266b2a8a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Chillie Cake",
-        content: "Deepfried Chicken",
-        price: "$2.99",
+        imageSrc: BlockchainDev,
+        title: "Blockchain Dapps",
+        content: "Dapps along with unique tokens",
+        price: "$499",
+        rating: "4.9",
+        reviews: "61",
+        url: "#"
+      },
+      {
+        imageSrc: dataMining,
+        title: "Data Mining and Scraping",
+        content: "Easy and swift data collection",
+        price: "$199",
+        rating: "4.9",
+        reviews: "95",
+        url: "#"
+      },
+      {
+        imageSrc: gameDev,
+        title: "Game Development",
+        content: "High graphic and functional games",
+        price: "$399",
+        rating: "4.1",
+        reviews: "26",
+        url: "#"
+      }
+    ],
+    Graphics: [
+      {
+        imageSrc: logoDesign,
+        title: "Logo Design",
+        content: "Eye-catching logo design",
+        price: "$99",
+        rating: "5.0",
+        reviews: "87",
+        url: "#"
+      },
+      {
+        imageSrc:businessCard,
+        title: "Business Card Design",
+        content: "Business card design and illustration",
+        price: "$99",
+        rating: "4.8",
+        reviews: "32",
+        url: "#"
+      },
+      {
+        imageSrc: websiteDesign,
+        title: "Website Design",
+        content: "Design the website of your dreams",
+        price: "$199",
+        rating: "4.9",
+        reviews: "89",
+        url: "#"
+      },
+      {
+        imageSrc: landingPage,
+        title: "Landing Page Design",
+        content: "Creative landing page design",
+        price: "$99",
+        rating: "4.6",
+        reviews: "12",
+        url: "#"
+      },
+      {
+        imageSrc: NFTart,
+        title: "NFT Art",
+        content: "Generation and bulk upload of NFTs",
+        price: "$299",
+        rating: "5.0",
+        reviews: "19",
+        url: "#"
+      },
+      {
+        imageSrc: imageEditing,
+        title: "Image Editing",
+        content: "Photoshop, filters and effects, etc",
+        price: "$199",
         rating: "5.0",
         reviews: "61",
         url: "#"
       },
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Guacamole Mex",
-        content: "Mexican Chilli",
-        price: "$3.99",
+        imageSrc: UIUX,
+        title: "UI/ UX Design",
+        content: "Responsive design for app or website",
+        price: "$249",
         rating: "4.2",
         reviews: "95",
         url: "#"
       },
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1565310022184-f23a884f29da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Carnet Nachos",
-        content: "Chilli Crispy Nachos",
-        price: "$3.99",
-        rating: "3.9",
-        reviews: "26",
+        imageSrc: socialMediaDesign,
+        title: "Social Media Design",
+        content: "Boost your social life",
+        price: "$199",
+        rating: "4.2",
+        reviews: "83",
         url: "#"
-      }
+      },
     ],
-    Main: getRandomCards(),
-    Soup: getRandomCards(),
-    Desserts: getRandomCards()
+    Video: [
+      {
+        imageSrc: lottie,
+        title: "Lottie Animations",
+        content: "Lottie animation and illustration",
+        price: "$199",
+        rating: "5.0",
+        reviews: "87",
+        url: "#"
+      },
+      {
+        imageSrc:characterAnime,
+        title: "Character Animation",
+        content: "Animate avatars and characters",
+        price: "$199",
+        rating: "4.8",
+        reviews: "32",
+        url: "#"
+      },
+      {
+        imageSrc: logoAnime,
+        title: "Logo Animations",
+        content: "Animated and attractive HD logo",
+        price: "$199",
+        rating: "4.9",
+        reviews: "89",
+        url: "#"
+      },
+      {
+        imageSrc: NFT,
+        title: "Animated NFT art",
+        content: "Value added animated NFTs",
+        price: "$199",
+        rating: "4.6",
+        reviews: "12",
+        url: "#"
+      },
+      {
+        imageSrc: whiteboard,
+        title: "Whiteboard Explainers",
+        content: "Whiteboard explainer video",
+        price: "$199",
+        rating: "4.2",
+        reviews: "19",
+        url: "#"
+      },
+      {
+        imageSrc: animatedExplainer,
+        title: "Animated Explainer Video",
+        content: "Explainer video with animated characters",
+        price: "$199",
+        rating: "5.0",
+        reviews: "61",
+        url: "#"
+      },
+      {
+        imageSrc: videoandPhotography,
+        title: "Video and Photography",
+        content: "Video and image production",
+        price: "$299",
+        rating: "4.2",
+        reviews: "95",
+        url: "#"
+      },
+      {
+        imageSrc: socialmediaads,
+        title: "Social Media Ads",
+        content: "Short but well explained videos",
+        price: "$199",
+        rating: "4.2",
+        reviews: "79",
+        url: "#"
+      },
+    ],
+    Writing: [
+      {
+        imageSrc: technicalWriting,
+        title: "Technical Writing",
+        content: "Professional technical articles",
+        price: "$299",
+        rating: "5.0",
+        reviews: "87",
+        url: "#"
+      },
+      {
+        imageSrc:UXwriting,
+        title: "UI / UX Writing",
+        content: "Elaborate writing to fit your UI/UX",
+        price: "$199",
+        rating: "4.8",
+        reviews: "32",
+        url: "#"
+      },
+      {
+        imageSrc: websiteContent,
+        title: "Website Content",
+        content: "Perfect words to fit your website",
+        price: "$199",
+        rating: "4.9",
+        reviews: "89",
+        url: "#"
+      },
+      {
+        imageSrc: writingandEditing,
+        title: "Proofreading",
+        content: "Ensure correct spelling and grammar",
+        price: "$99",
+        rating: "4.8",
+        reviews: "12",
+        url: "#"
+      },
+      {
+        imageSrc: bookEditing,
+        title: "Book Editing",
+        content: "Get your book publish ready",
+        price: "$249",
+        rating: "4.2",
+        reviews: "19",
+        url: "#"
+      },
+      {
+        imageSrc: videoEditing,
+        title: "Video Editing",
+        content: "Fine tune short and long videos",
+        price: "$199",
+        rating: "5.0",
+        reviews: "61",
+        url: "#"
+      },
+      {
+        imageSrc: productDescriptions,
+        title: "Product Descriptions",
+        content: "Short but descriptive phrases",
+        price: "$99",
+        rating: "4.2",
+        reviews: "95",
+        url: "#"
+      },
+      {
+        imageSrc: resumeWriting,
+        title: "Resume Writing",
+        content: "Step by step display of your achievements",
+        price: "$199",
+        rating: "4.2",
+        reviews: "103",
+        url: "#"
+      },
+    ],
   }
 }) => {
   /*
@@ -231,93 +474,4 @@ export default ({
       <DecoratorBlob2 />
     </Container>
   );
-};
-
-/* This function is only there for demo purposes. It populates placeholder cards */
-const getRandomCards = () => {
-  const cards = [
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      title: "Chicken Chilled",
-      content: "Chicken Main Course",
-      price: "$5.99",
-      rating: "5.0",
-      reviews: "87",
-      url: "#"
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1582254465498-6bc70419b607?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      title: "Samsa Beef",
-      content: "Fried Mexican Beef",
-      price: "$3.99",
-      rating: "4.5",
-      reviews: "34",
-      url: "#"
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1565310022184-f23a884f29da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      title: "Carnet Nachos",
-      content: "Chilli Crispy Nachos",
-      price: "$3.99",
-      rating: "3.9",
-      reviews: "26",
-      url: "#"
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      title: "Guacamole Mex",
-      content: "Mexican Chilli",
-      price: "$3.99",
-      rating: "4.2",
-      reviews: "95",
-      url: "#"
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1550461716-dbf266b2a8a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      title: "Chillie Cake",
-      content: "Deepfried Chicken",
-      price: "$2.99",
-      rating: "5.0",
-      reviews: "61",
-      url: "#"
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327??ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      title: "Nelli",
-      content: "Hamburger & Fries",
-      price: "$7.99",
-      rating: "4.9",
-      reviews: "89",
-      url: "#"
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      title: "Jalapeno Poppers",
-      content: "Crispy Soyabeans",
-      price: "$8.99",
-      rating: "4.6",
-      reviews: "12",
-      url: "#"
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1473093226795-af9932fe5856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      title: "Cajun Chicken",
-      content: "Roasted Chicken & Egg",
-      price: "$7.99",
-      rating: "4.2",
-      reviews: "19",
-      url: "#"
-    }
-  ];
-
-  // Shuffle array
-  return cards.sort(() => Math.random() - 0.5);
 };

@@ -11,7 +11,7 @@ import Pricing from "components/pricing/ThreePlans.js";//
 import FAQ from "components/faqs/SingleCol.js";//
 import Forms from "components/forms/SimpleContactUs";//
 import Footer from "components/footers/FiveColumnWithBackground.js";//
-import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
+import macHeroScreenshotImageSrc from "images/shop/logo.gif"
 import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
