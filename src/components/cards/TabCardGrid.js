@@ -97,7 +97,7 @@ export default ({
       {
         imageSrc: nftDev,
         title: "NFT Development",
-        content: "You name it we'll do it",
+        content: "Fully covered NFT launch package.",
         price: "$599",
         rating: "5.0",
         reviews: "87",

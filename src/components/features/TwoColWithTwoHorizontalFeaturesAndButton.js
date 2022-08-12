@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import TeamIllustrationSrc from "images/team-illustration-2.svg";
+import TeamIllustrationSrc from "images/shop/businessteam.gif";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
@@ -101,8 +101,7 @@ export default ({
     <Container>
       <TwoColumn>
         <ImageColumn>
-          <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
-          {showDecoratorBlob && <DecoratorBlob />}
+          <Image src={imageSrc}/>
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>

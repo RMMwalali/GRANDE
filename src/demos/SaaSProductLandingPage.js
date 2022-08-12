@@ -11,7 +11,7 @@ import Pricing from "components/pricing/ThreePlans.js";//
 import FAQ from "components/faqs/SingleCol.js";//
 import Forms from "components/forms/SimpleContactUs";//
 import Footer from "components/footers/FiveColumnWithBackground.js";//
-import macHeroScreenshotImageSrc from "images/shop/logo.gif"
+import macHeroScreenshotImageSrc from "images/shop/checklist.gif"
 import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
@@ -117,7 +117,7 @@ export default () => {
           {
             question: "Will my website be mobile-friendly?",
             answer:
-              "Yes, they all are. Mobile phones are the most used technological devices mainly to access the web. The websites we make are responsive in tablets, ipads, mobile phones and pcs."
+              "Yes, they all are. Mobile phones are the most used technological devices mainly to access the web. The websites we make are responsive on all screens."
           },
           {
             question: "How long does it take to make a website?",
@@ -132,12 +132,12 @@ export default () => {
           {
             question: "Is your work original or do you work off of templates ?",
             answer:
-              "Definitely a bit off both. I say this because our team members check out existing websites or templates to get inspiration. It is however totally your decision, to customize and work from nothing, or to work from a template or existing website. All your websites will most definitely be unique! "
+              "Definitely a bit of both. I say this because our team members check out existing websites or templates to get inspiration. It is however totally your decision, to customize and work from nothing, or to work from a template or existing website. All your websites will most definitely be unique! "
           },
           {
             question: "Do you charge for revisions ?",
             answer:
-              "No we do not. Revisions upto the first two weeks after the job is done are free. Anything after 14-30 days will be done upon a cheap agreed upon price."
+              "No we do not. Revisions upto the first two weeks after the job is done are free. Anything beyond 15 days will be done upon a cheap agreed upon price."
           },
           {
             question: "What file types will be delivered at the end of the design process ?",

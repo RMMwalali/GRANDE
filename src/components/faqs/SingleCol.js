@@ -27,7 +27,7 @@ const QuestionToggleIcon = motion(styled.span`
     ${tw`w-6 h-6`}
   }
 `);
-const Answer = motion(tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed`);
+const Answer = motion(tw.dd`pointer-events-none text-primary-400 text-sm sm:text-base leading-relaxed`);
 
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
   ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-56 w-56 opacity-15 transform translate-x-2/3 -translate-y-12 text-teal-400`}
@@ -46,12 +46,12 @@ export default ({
     {
       question: "Which payment methods do you accept ?",
       answer:
-        "We recommend the secure transfer of money through prepaid and credit cards but also accept online payment methods such as Paypal, Payoneer and Skrill."
+        "We recommend the secure transfer of money through prepaid or credit cards but also accept online payment methods such as Paypal, Payoneer and Skrill."
     },
     {
       question: "Do you do refunds ?",
       answer:
-        "Yes we do. In a span of 10 - 20 days after a job order that has not been delivered you will automatically qualify for a refund.We guarantee jobs well done without such inconvenieces."
+        "Yes we do. In a span of 10 - 20 days after a job order that has not been delivered you will automatically qualify for a refund. We guarantee jobs well done without such inconvenieces."
     },
     {
       question: "What if I need help with my later after the job is done ?",
@@ -63,7 +63,8 @@ export default ({
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);
 
   const toggleQuestion = questionIndex => {
-
+    if (activeQuestionIndex === questionIndex) setActiveQuestionIndex(null);
+    else setActiveQuestionIndex(questionIndex);
   };
 
   return (

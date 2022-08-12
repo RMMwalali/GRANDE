@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-import TeamIllustrationSrc from "images/shop/logo.gif";
+import TeamIllustrationSrc from "images/shop/checklist.gif";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 /*
 import lottie from "lottie-web";
@@ -86,12 +86,8 @@ export default ({
     },
     {
       heading: "Make a secure payment",
-      description: "Pay for your service securely using a credit or debit."
+      description: "Pay for your service securely and track your order."
     },
-    {
-      heading: "Make your order",
-      description: "Complete and track your order."
-    }
   ];
 
   if (!steps) steps = defaultSteps;

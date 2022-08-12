@@ -99,15 +99,15 @@ export default () => {
     {
       imageSrc: nftDev,
       title: "NFT Development",
-      description: "NFTs are really hot right now. However, starting from the ground up is not as easy as people think. Ours is a one stop shop for beginning or continuing NFT projects. With us get your marketplace, art, minting website and landing page in one place.",
+      description: "NFTs are really hot right now. However, starting from the ground up is not as easy as people think. Ours is a one stop shop for beginning or continuing NFT projects. With us get your marketplace, art, minting website and landing page all in one place.",
       locationText: "Remote",
       pricingText: "USD 599",
       rating: "5.0",
     },
     {
       imageSrc: BlockchainDev,
-      title: "Blockchain Development",
-      description: "If you are looking to come up with a unique cryptocurrency token, or decentralized app; we are happy to help! ",
+      title: "Blockchain Dev",
+      description: "Bitcoin and Ethereum are two of the better known cryptocurrencies. It has however become very easy to come up with a unique token mostly to accompany NFT projects. If you are in the market for a one in a million token or Dapp, contact us for more details.",
       locationText: "Remote",
       pricingText: "USD 499",
       rating: 4.9,
@@ -115,7 +115,7 @@ export default () => {
     {
       imageSrc: NFTart,
       title: "NFT art",
-      description: "Unique sets of art, may it be a video, an image or an audio file, we'll mass produce either and bulk upload them to IPFS and the marketplace of your choice.",
+      description: "Unique sets of art, may it be a video, an image or an audio file, we'll bulk upload them to IPFS and the marketplace of your choice. Auto generating NFT art from different layers we can do too.",
       locationText: "Remote",
       pricingText: "USD 299",
       rating: "5.0",
@@ -131,7 +131,7 @@ export default () => {
     {
       imageSrc: writingandEditing,
       title: "Proofreading and Editing",
-      description: "Work and school articles reviewed by our team to ensure they are well spelled and grammar-following",
+      description: "Articles, blogs, school work are some of the works that sometimes need editing and proofreading. Writing any of these from scratch is already a tiresome job so let us help you out the rest of the way! We edit and proofread written materials and are right at your beck and call.",
       locationText: "Remote",
       pricingText: "USD 99",
       rating: 4.8,
